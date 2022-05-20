@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora IMC</title>
+</head>
+<body>
+   <div class="container">
+       <h2 class="titulo">Calculadora</h2>
+       <div class="bar"></div>
+       <div class="display"></div>
+       <div class="buttons">
+           <div class="fila1">
+               <button id='limparDisplay' onclick = "limparDisplay('CE')">CE</button>
+               <button id='limparCalculo' onclick = "limparCalculo('C')">C</button>
+               <button id ='limparUltimoDig' onclick = "limparUltimoDig('<<')"><i class="fas fa-arrow-left"></i></button>
+               <button id = 'operadorDivisao' onclick = "operacao('/')"><i class="fas fa-divide"></i></button>
+            </div>
+            <div class="fila2">  
+                <button id='numero7' onclick = "clicou('7')">7</button>
+                <button id='numero8' onclick = "clicou('8')">8</button>
+                <button id='numero9' onclick = "clicou('9')">9</button>
+                <button id='operadorMultiplicar' onclick = "operacao('*')"><i class="fas fa-times"></i></button>
+            </div> 
+            <div class="fila3">    
+                <button id='numero4' onclick = "clicou('4')">4</button>
+                <button id='numero5' onclick = "clicou('5')">5</button>
+                <button id='numero6' onclick = "clicou('6')">6</button>
+                <button id='operadorSubtrair' onclick = "operacao('-')"><i class="fas fa-minus"></i></button>
+            </div>
+            <div class="fila4">    
+                <button id='numero1' onclick = "clicou('1')">1</button>
+                <button id='numero2' onclick = "clicou('2')">2</button>
+                <button id='numero3'onclick = "clicou('3')">3</button>
+                <button id='operadorSomar' onclick = "operacao('+')"><i class="fas fa-plus"></i> </button>
+            </div>
+            <div class="fila5">    
+                <button id='operadorMais-menos' onclick = "inverterSinal('+/-')">+/-</button>
+                <button id='numero0' onclick = "clicou('0')">0</button>
+                <button id='virgula' onclick = "inserirDecimal(',')">,</button>
+                <button id='operadorIgual' onclick = "igual('=')"><i class="fas fa-equals"></i></button>
+            </div>        
+       </div>    
+   </div> 
+   <script src="https://kit.fontawesome.com/db257622a9.js" crossorigin="anonymous"></script>
+   <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
